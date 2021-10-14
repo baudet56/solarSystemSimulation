@@ -16,7 +16,7 @@ public:
     double getY() const;
 
     double norm() const;
-
+    double scalarProduct(const vector& v) const;
 
     vector operator=(const vector& v);
     vector operator+(const vector& v) const;

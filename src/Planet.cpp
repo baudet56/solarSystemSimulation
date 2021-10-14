@@ -27,13 +27,10 @@ planet::planet(const planet& p)
 
 planet::~planet()
 {
-
-    std::cout << _name << endl;
     _saveFile.close();
 }
 void planet::init()
 {
-    std::cout << _name << std::endl;
     _saveFile.open("./save/" + _name + ".txt");
     _saveFile << _name << ";" << _mass << ";" << _radius << std::endl;
 }

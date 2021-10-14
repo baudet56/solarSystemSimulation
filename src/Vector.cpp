@@ -36,6 +36,11 @@ double abs(const vector& v)
     return v.norm();
 }
 
+double vector::scalarProduct(const vector& v) const
+{
+    return _x*v._x + _y*v._y;
+}
+
 vector vector::operator=(const vector& v)
 {
     _x = v._x;
